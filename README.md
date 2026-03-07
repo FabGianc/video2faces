@@ -35,11 +35,5 @@ Estrae volti (frame/face crops) da file video e salva gli output in una cartella
 ```bash
 cp .env.example .env
 
-Avvia lo stack:
 
-docker compose -f config/docker-compose.prod.yml --env-file .env up -d --build
 
-Verifica container e log:
-
-docker compose -f config/docker-compose.prod.yml ps
-docker compose -f config/docker-compose.prod.yml logs -f
