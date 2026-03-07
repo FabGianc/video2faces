@@ -51,9 +51,7 @@ Variabili d’ambiente
 Le variabili in `.env` sono pensate per:
 
 - impostare porte e host
-
 - definire percorsi input/output montati in container
-
 - configurare dominio (se usi Caddy come reverse proxy)
 
 Vedi `.env.example` per una base.
@@ -81,11 +79,9 @@ Output
 
 Per convenzione gli output (immagini/face crops/log) dovrebbero finire in una cartella tipo:
 
-outbox/
-
-outbox/Pictures/
-
-outbox/Pictures/<run_YYYY-MM-DD_HHMMSS>/...
+- outbox/
+- outbox/Pictures/
+- outbox/Pictures/<run_YYYY-MM-DD_HHMMSS>/...
 
 (I dettagli dipendono dalla logica interna degli script.)
 
