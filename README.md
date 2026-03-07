@@ -13,3 +13,11 @@ App LAN (Streamlit + Docker) per estrarre volti dai video e salvare crop + JSON 
 
 ## Struttura consigliata su host (Ubuntu)
 Esempio:
+
+/mnt/dati/services/video2faces/
+app/
+config/
+inbox/ # input (upload o copie admin)
+outbox/ # output (Pictures/...)
+tmp/ # zip su richiesta
+logs/
