@@ -39,12 +39,12 @@ cp .env.example .env
 2) Avvio lo stack:
 ```bash
 docker compose -f config/docker-compose.prod.yml --env-file .env up -d --build
-'''
+```
 4) Verifica container e log:
 ```bash
 docker compose -f config/docker-compose.prod.yml ps
 docker compose -f config/docker-compose.prod.yml logs -f
-'''
+```
 
 
 
