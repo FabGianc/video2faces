@@ -9,7 +9,7 @@ Estrae volti (frame/face crops) da file video e salva gli output in una cartella
 
 ## Struttura repository
 
-.
+.  
 ├─ app/  
 │ ├─ Dockerfile  
 │ ├─ requirements.txt  
