@@ -1,25 +1,57 @@
 
 ---
 
-## .gitignore
+## `.gitignore`
 ```gitignore
-# dati/artefatti runtime (MAI su git)
-inbox/
-outbox/
-tmp/
-logs/
-backups/
-
-# env/segreti
-.env
-*.env
-
-# python
+# --- Python ---
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
 
-# editor/OS
+# --- Virtualenv / tooling ---
+.venv/
+venv/
+ENV/
+.env
+.env.*
+!.env.example
+
+# --- IDE / OS ---
 .vscode/
 .idea/
+*.swp
 .DS_Store
+Thumbs.db
+
+# --- Logs / temp ---
+*.log
+logs/
+tmp/
+temp/
+
+# --- Project outputs (avoid committing generated data) ---
+outbox/
+Pictures/
+runs/
+outputs/
+data/
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# Keep placeholders if you use them
+!.gitkeep
