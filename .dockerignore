@@ -1,0 +1,42 @@
+# VCS
+.git
+.gitignore
+
+# Python caches / env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Docs / misc
+*.md
+LICENSE
+
+# Logs / temp
+*.log
+logs/
+tmp/
+temp/
+
+# Large or generated project data
+outbox/
+Pictures/
+runs/
+outputs/
+data/
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.webp
