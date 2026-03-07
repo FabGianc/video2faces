@@ -34,3 +34,5 @@ Estrae volti (frame/face crops) da file video e salva gli output in una cartella
 1) Crea il file `.env` a partire dall’esempio:
 ```bash
 cp .env.example .env
+
+2) Avvia lo stack:
