@@ -18,3 +18,19 @@ Estrae volti (frame/face crops) da file video e salva gli output in una cartella
 └─ config/  
 ├─ Caddyfile  
 └─ docker-compose.prod.yml  
+
+---
+
+## Prerequisiti
+
+- Docker Engine + Docker Compose (plugin)
+- (Opzionale) Caddy via container come da `docker-compose.prod.yml`
+- Connettività LAN se previsto (esposizione limitata)
+
+---
+
+## Avvio in produzione (Docker Compose)
+
+1) Crea il file `.env` a partire dall’esempio:
+```bash
+cp .env.example .env
