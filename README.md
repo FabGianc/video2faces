@@ -1,29 +1,19 @@
 # video2faces
-App LAN (Streamlit + Docker) per estrarre volti dai video e salvare crop + JSON per ciascun file, con download via file server e ZIP su richiesta
 
-**video2faces** estrae volti da file video e salva:
-- immagini (crop dei volti)
-- metadati JSON per ogni video
+Estrae volti (frame/face crops) da file video e salva gli output in una cartella “outbox”, con una variante **web** per l’esecuzione tramite interfaccia.
 
-È pensato per uso **in LAN** con UI web (Streamlit) e download via file server (Caddy).
+> Nota: questo repository contiene il **pacchetto di deploy minimo** (Dockerfile + compose + reverse proxy Caddy).
+> Personalizza i percorsi e le variabili in `.env` (partendo da `.env.example`).
 
-## Porte
-- UI Streamlit: `http://<HOST_OR_IP>:8502`
-- File server (download): `http://<HOST_OR_IP>:8503`
+---
 
-## Struttura consigliata su host (Ubuntu)
-Esempio:
-
-/mnt/dati/services/video2faces/
-
-app/
-
-config/
-
-inbox/ # input (upload o copie admin)
-
-outbox/ # output (Pictures/...)
-
-tmp/ # zip su richiesta
-
-logs/
+## Struttura repository
+.
+├─ app/
+│ ├─ Dockerfile
+│ ├─ requirements.txt
+│ ├─ video2faces.py
+│ └─ video2faces_web.py
+└─ config/
+├─ Caddyfile
+└─ docker-compose.prod.yml
