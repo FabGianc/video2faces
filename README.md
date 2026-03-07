@@ -48,15 +48,15 @@ docker compose -f config/docker-compose.prod.yml logs -f
 
 Variabili d’ambiente
 
-Le variabili in .env sono pensate per:
+Le variabili in `.env` sono pensate per:
 
-impostare porte e host
+- impostare porte e host
 
-definire percorsi input/output montati in container
+- definire percorsi input/output montati in container
 
-configurare dominio (se usi Caddy come reverse proxy)
+- configurare dominio (se usi Caddy come reverse proxy)
 
-Vedi .env.example per una base.
+Vedi `.env.example` per una base.
 
 Esecuzione “local dev” (senza Docker)
 
